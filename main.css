@@ -1,0 +1,41 @@
+body {
+    background-image: url("pizza.jpg");
+    background-size: 150px;
+}
+div {
+    width: auto;
+    margin: 0 auto;
+    display: flex;    justify-content: center;
+}
+table, th, td, tr {
+    border: 2px solid white;
+    width: 500px;
+    padding: 5px;
+}
+table {
+    background-color: rgba(218, 88, 88, 0.88);
+}
+#col1 {
+    width: 20%;
+}
+textarea, input[type=text], select {
+    resize: none;
+    background-color: rgba(231, 207, 207, 0.88);
+}
+input[type=submit] {
+    background-color: white;
+    border: 1px solid black;
+}
+        
+@media screen and (max-width: 500px) {
+    body {
+        
+        background-color: red;
+    }
+    div {
+        width: 95%;
+    }
+    table {
+        background-color: pink;
+    }
+}

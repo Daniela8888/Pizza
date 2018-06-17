@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+    <div>
+        <form method="POST" action="main.php">
+            <table id="table_main">
+                <tr>
+                    <th colspan="2">Pizza</th>
+                </tr>
+                <tr>
+                    <td id="col1">Name</td>
+                    <td id="col2"><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td id="col1">Pizza</td>
+                    <td id="col2"><span>Capri:</span><select name="pizza">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        
+                    </select><br>
+                    
+
+
+
+                    <span>Vegetariana:</span><select name="pizza">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        
+                    </select><br>
+                        
+
+                    <span>Hawai:</span><select name="pizza">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        
+                    </select><br>
+
+                    <span>Chicken:</span><select name="pizza">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        
+                    </select><br>
+                    <span>Provinciale:</span><select name="pizza">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        
+                    </select><br></td>
+                </tr>
+                <tr>
+                    <td id="col1">Pizza Sauce</td>
+                    <td id="col2"><select name="sauce">
+                        <option>Tomato</option>
+                        <option>Cheese</option>
+                        <option>Marinara</option>
+                        <option>Alfredo</option>
+                        <option>Arrabiata</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td id="col1">Optional Extras</td>
+                    <td id="col2"><input type="checkbox" name="extras[]" value="Extra Cheese"><span>Extra Cheese</span>
+                    <input type="checkbox" name="extras[]" value="Gluten Free Base"><span>Gluten Free Base</span></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><span>Delivery Address</span><br><textarea name="delivery" style="width: 98%" rows="6"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Send My Order"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
